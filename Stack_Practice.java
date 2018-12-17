@@ -37,10 +37,8 @@ private int[] stack;
                 this.top++;
                 this.size--;
                 this.stack[top] = number;
-
-            }
-
-            }
+                }
+        }
 
 
     // Removing an last Element from an Array and Increasing the Space of the Stack
@@ -65,6 +63,8 @@ private int[] stack;
     private void getSize(){
         System.out.println(this.size);
     }
+    
+    // Main Thread 
     public static void main(String[] args) {
         Stack_Practice me1 = new Stack_Practice(10);
         me1.push(10);
@@ -72,7 +72,5 @@ private int[] stack;
         me1.getSize();
         me1.pop();
         me1.getSize();
-
     }
-
 }
